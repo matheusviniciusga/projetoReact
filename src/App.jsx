@@ -1,5 +1,14 @@
+import Titulo from "./Titulo";
+import Aluno from "./Aluno";
+
 function App() {
-  return <h1>Olá Mundo!</h1>
+
+  return (
+    <div>
+      <Titulo />
+      <Aluno />
+    </div>
+  )
 }
 
 export default App
