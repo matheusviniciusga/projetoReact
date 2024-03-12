@@ -1,9 +1,13 @@
-function Aluno() {
+import React, { useState } from "react";
+
+function Aluno( {setNome} ) {
     
-    const [nome, setNome] = useState('');
+    const [nome, setNomeLocal] = useState('');
 
     const handleInputChange = (event) => {
-        setNome(event.target.value);
+        const novoNome = event.target.value;
+        setNomeLocal(novoNome);
+        setNome(novoNome);
     };
 
     return (
