@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Aluno( {setNome} ) {
     
     const [nome, setNomeLocal] = useState('');
 
-    const handleInputChange = (event) => {
+    const colocaNome = (event) => {
         const novoNome = event.target.value;
         setNomeLocal(novoNome);
         setNome(novoNome);
@@ -17,7 +17,7 @@ function Aluno( {setNome} ) {
                 type="text"
                 placeholder="Digite seu nome"
                 value={nome}
-                onChange={handleInputChange}
+                onChange={colocaNome}
             />
         </div>
     )
